@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+      margin: 0;
+  }
+
+    /*=========================================================== NAVIGATION SECTION ====================================================*/
+
+   
+
+    li, 
+    a {
+	color: rgb(15, 15, 15);
+	cursor: pointer;
+	font-size: 1.75rem;
+	font-weight: 300;
+	text-decoration: none;
+    font-family: Anton;
+    list-style: none;
+    }
+
+    /*=== i took out "box-sizing: border-box;" from .navbar; fixes reg view, but throws off mobile menu button ===*/
+
+  
+    .navbar {
+    
+        position: fixed;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0.875rem 3%;
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        
+      }
+    
+      .logo {
+        cursor:pointer;
+      }
+    
+      .nav-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.75rem;
+      }
+    
+     
+    
+    
+    
+    .nav-link{
+        transition: 0.7 ease;
+    }
+    
+      .nav-link:hover{
+        color:rgb(32, 192, 67);
+        transition: 0.5s;
+      }
+    
+      .hamburger{
+        display: none;
+        cursor: pointer;
+      }
+    
+    
+      .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: rgb(32, 192, 67);
+      }
+    
+
+
+      .social-media .social-media-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        align-items: center;
+        
+    }
+
+
+    /*============================================================ HERO SECTION ===========================================================*/
+
+    #hero {
+        background-image: url('../images/giovanni-gagliardi-b1omwFGldMU-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+        text-align: center;
+        background-color: rgba(240, 231, 231, 0.28);
+        background-blend-mode: color;
+        height: 40rem;
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        
+        }
+
+
+
+    .abouts {
+        height: auto;
+        background-color: aqua;
+    }
+
+    .abouts h1 {
+        
+        font-family: Anton;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .abouts h3 {
+        text-align: center;
+    }
+
+
+
+    .servicess {
+        height: auto;
+        background-color: rgb(214, 68, 97);
+
+    }
+
+    .servicess h1,
+    h2,
+    p {
+        text-align: center;
+        
+    }
+
+    .servicess h2 {
+        line-height: 6rem;
+    }
+
+
+    .tesss {
+        height: auto;
+        background-color: cornflowerblue;
+        
+        padding: 6rem 0;
+    }
+
+    .tesss h1, p {
+        text-align: center;
+        color:#ffffff;
+    }
+
+    .lesss {
+        height: auto;
+        background-color:darkolivegreen;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lesss h1, p {
+        text-align: center;
+        color:#ffffff;
+    }
+
+    .lesss p {
+        line-height: 2rem;
+    }
+
+
+
+        /*=========== TEST SECTION CARD FLIP; NOTE: WITH PRESERVE 3D, WE FLIP THE WHOLE CARD, NOT JUST 1 SIDE =================================*/
+
+
+        .flipcontainer {
+            
+                
+            height: 18rem;
+            width: 25rem;
+            background: none;
+            top: 50%;
+            left: 50%;
+           
+            }
+    
+
+
+        .card {
+
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 18rem;
+            width: 25rem;
+            transform-style: preserve-3d;
+            transition: all 0.9s ease;
+            background: #0e2aca;
+
+            
+        }
+    
+        /*=== THE BACKFACE VISIBILITY PROP CONTROLS THE REVERSE SIDE OF JUST THAT DIV; KEEPING EITHER VISIBLE WILL CONFLICT W/ THE 3D LAYERS AND CAUSE A FLICKER ===*/
+    
+        .front {
+
+            background-image: url('../images/contactemail.jpg');
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            height: 18rem;
+            width: 25rem;
+            position: absolute;
+            backface-visibility: hidden;
+            overflow: hidden;
+           
+
+        }
+
+        .back {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18rem;
+            width: 25rem;
+            backface-visibility: hidden;
+            overflow: hidden;
+            color:black;
+            background: #e00b0b;
+            text-align: center;
+            transform: rotateY(180deg);
+           
+
+
+        }
+
+        .back h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            padding: 30px;
+            text-align: center;
+        }
+
+    
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+    
+
+ 
+
+    /*== margin-inline is for left and right margins only; margin-block would be top and bottom. Min-width below our 90% adds padding
+    to left and right when minimizing screen, our 70.5rem is the maximum width. MIN WIDTH A KEY ELEMENT TO RESPONSIVE DESIGN ==*/
+
+    .container {
+
+        margin-inline: auto;
+        width: min(90%, 70.5rem);
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        .split {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        /* media query for div splits */
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+

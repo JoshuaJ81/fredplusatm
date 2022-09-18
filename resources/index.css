@@ -1,0 +1,1363 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    line-height: 1.9rem;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+      margin: 0;
+  }
+
+    /*=========================================================== NAVIGATION SECTION ====================================================*/
+
+   
+
+    li, 
+    a {
+	color: rgb(15, 15, 15);
+	cursor: pointer;
+	font-size: 1.75rem;
+	font-weight: 300;
+	text-decoration: none;
+    font-family: Anton;
+    list-style: none;
+    }
+
+    
+
+  
+    .navbar {
+    
+        position: fixed;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0.875rem 3%;
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        
+      }
+    
+      .logo {
+        cursor:pointer;
+      }
+    
+      .nav-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.75rem;
+      }
+    
+     
+    
+    
+    
+    .nav-link{
+        transition: 0.7 ease;
+    }
+    
+      .nav-link:hover{
+        color:rgb(32, 192, 67);
+        transition: 0.5s;
+      }
+    
+      .hamburger{
+        display: none;
+        cursor: pointer;
+      }
+    
+    
+      .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: rgb(32, 192, 67);
+      }
+    
+
+
+      .social-media .social-media-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        align-items: center;
+        
+    }
+
+
+    /*============================================================ HERO SECTION ===========================================================*/
+
+    #hero {
+        background-image: url('../images/giovanni-gagliardi-b1omwFGldMU-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+        text-align: center;
+        background-color: rgba(240, 231, 231, 0.28);
+        background-blend-mode: color;
+        height: 40rem;
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        
+        }
+
+        .fade {
+            
+            font-family: Anton;
+           
+            font-style: italic;
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            animation-duration: 1.5s;
+            animation-name: slidein;
+        
+        
+        }
+        
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+        
+            
+        
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        #hero h1 {
+           
+                
+
+                color: rgb(12, 12, 12);
+            
+        }
+
+ 
+        
+        @keyframes fadeIn {
+            0%{opacity: 0;}
+            100%{opacity:1;}
+        }
+
+        #Page-Heroes {
+            background-image: url('../images/easymoney-2.jpg');
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:top;
+            text-align: center;
+            
+            height: 40rem;
+            
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-inline: auto;
+            
+            
+            }
+
+            #Page-Heroes h1 {
+                font-family: Anton;
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 400;
+                color:#3e3c3c;
+                text-transform: uppercase;
+                align-items: center;
+                justify-content: center;
+
+                padding: 1rem 2.5rem;
+                border: solid 0.125rem rgba(10, 10, 10, 0.822);
+                
+                background-color: rgba(240, 231, 231, 0.75);
+                display: inline;
+            }
+
+
+
+
+    /*============================================================= ABOUT SECTION =======================================================*/
+    
+    .about {
+        background-color: rgb(247, 205, 67);
+       
+
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+
+    .about h1 {
+    
+    font-family: anton;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 1.2rem;
+    }
+    
+    .about h3 {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 1.2rem;
+    
+    }
+        
+
+        .btn {
+        
+        font-family: Anton;	
+        color: rgb(15, 15, 15);
+        background-color: rgb(32, 192, 67);
+        opacity: 0.9;
+        transition: 0.3s;
+        border: solid 0.20rem rgba(240, 231, 231, .3);
+        border-radius: 1rem;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        border-color: none;
+        border-style: hidden;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        cursor: pointer;
+        
+        
+        }
+        
+        .btn:hover {
+            background-color: rgb(14, 12, 12);
+            color:rgb(32, 192, 67);
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+
+
+
+
+    /*========================================================== ABOUT PAGE ================================================================*/
+
+
+
+    .value-proposition h1 {
+    
+        font-family: Anton;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        
+    
+        }
+
+
+            .value-proposition-list li {
+                list-style-type:decimal;
+                list-style-position: inside;
+                text-align: center;
+                font-weight: 100;
+                font-family: montserrat;
+                font-size: 1.25rem;
+                cursor:initial;
+                padding-top: 1.5rem;
+            }
+
+
+            #atm-benefits {
+                background-image: url('../images/pexels-monstera-5849549.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position:top;
+                text-align: center;
+                background-color: rgba(240, 231, 231, 0.28);
+                background-blend-mode: color;
+                height: 40rem;
+                
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-inline: auto;
+            }
+
+
+
+                #atm-benefits h1 {
+                        
+                    font-family: Anton;
+                    text-align: center;
+                    font-size: 3.5rem;
+                    font-weight: 400;
+                    min-width: 18.75rem;
+                    text-transform: uppercase;
+                    
+                    color:rgb(15, 15, 15);
+                }
+
+                .atm-benefits-list h1, h3, p {
+                    text-align: center;
+                    font-family: Montserrat;
+                }
+
+                .atm-benefits-list h1 {
+                    
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }
+
+
+
+                
+    
+
+    #coh-banner {
+        background-image: url('../images/cy-9NUG56VAt4A-unsplash.jpg');
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+        text-align: center;
+        display: flex;
+        height: 60rem;
+        padding-top: 12rem;
+        
+        }
+
+                #coh-banner h1 {
+                text-align: center;
+                text-transform: capitalize;
+                align-items: flex-start;
+                font-size: 3rem;
+                font-weight: 500;
+                line-height: 3.5rem;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Anton;
+                color:#ffffff;
+                }
+    
+    
+    /*========================================================== SERVICE SECTION ============================================================*/
+
+    .service img {
+        display: block;
+        max-width: 100%;
+    }
+
+    /*=== NOTE: Added fontsize to service h1 and h3 ===*/
+    
+    .service h1 {
+    font-family: Anton;
+    font-weight: 300;
+    font-size: 1.75rem;
+    text-transform:uppercase;
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    }
+
+
+    .service h3 {
+        font-family: Montserrat;
+        font-weight:lighter;
+        font-size: 1.1rem;
+        text-transform:uppercase;
+        margin-top: 1.5rem;
+        text-align: center;
+        
+        }
+
+
+    
+    /*================================================================ SERVICES PAGE=========================================================*/
+    
+    .services {
+    background-color: rgb(247, 205, 67);
+    
+
+    }
+
+    .services h1 {
+        
+        font-family: Anton;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform:uppercase;
+        
+        text-align: center;
+        
+        
+        }
+
+        .services h2 {
+            font-family: Montserrat;
+            font-weight:lighter;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform:uppercase;
+            padding-top: 1.5rem;
+            text-align: center;
+            
+            }
+    
+
+            .services-montage {
+                height: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+
+
+            .services-images {
+                display: flex;
+                flex-wrap: wrap;
+                }
+                
+                
+                #services-images-resize {
+                
+                justify-content:space-around;
+                width: 100%;
+                
+                }
+
+                    .adjust {
+                        height: 42.4375rem;
+                        width: 29.0625rem;
+                    }
+    
+
+    /*================================================================ RATES SECTION =========================================================*/
+
+    
+    .rates {
+	background-color: rgb(247, 205, 67);
+    
+	
+    }
+
+    .rates img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .rates h1 {
+        font-family: Anton;
+        font-weight: lighter;
+        font-size: 1.75rem;
+        text-transform:uppercase;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        
+	
+	}
+
+    
+    .rates h3 {
+	font-family: Montserrat;
+	font-weight: 300;
+    font-size: 1.1rem;
+	text-transform:uppercase;
+	margin-top: 1.5rem;
+	text-align: center;
+    
+	
+	}
+
+
+    /*================================================================ RATES PAGE ========================================================*/
+
+    .rates-page {
+        background-color: rgb(247, 205, 67);
+        
+        
+        }
+    
+
+    
+        .rates-page h1 {
+            font-family: Anton;
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform:uppercase;
+            padding-bottom: 1.5rem;
+            text-align: center;
+            
+        
+        }
+
+        .rates-page h2 {
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 1.1rem;
+            text-transform:uppercase;
+            padding-bottom: 1rem;
+            text-align: center;
+            }
+
+
+
+
+            #rates-handshake {
+                background-image: url('../images/rates-handshake.jpg');
+                justify-content: flex-start;
+                align-items: flex-start;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position:top;
+                text-align: center;
+                display: flex;
+                height: 60rem;
+                padding-top: 12rem;
+                
+                }
+
+    /*=============================================================== CONTACT PAGE =======================================================*/
+
+    .contact-page {
+        background-color: rgb(247, 205, 67);
+        
+        
+        }
+    
+
+    
+        .contact-page h1 {
+            font-family: Anton;
+            font-size: 3rem;
+            font-weight: 400;
+            font-style: italic;
+            text-transform:uppercase;
+
+            text-align: center;
+            
+        
+        }
+
+        .contact-page h2 {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 1.25rem;
+            text-transform:uppercase;
+            padding-top: 1.5rem;
+            text-align: center;
+            
+            
+            }
+
+            .contact-options {
+                height: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+
+
+            .contact-icons {
+                display: flex;
+                flex-wrap: wrap;
+                }
+                
+                
+                #contact-icons-resize {
+                
+                justify-content:space-evenly;
+                width: 100%;
+                
+                }
+
+
+
+    /* === CARD FLIPS EMAIL ===*/
+
+
+
+    .email-card {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 18rem;
+        width: 25rem;
+        transform-style: preserve-3d;
+        transition: all 0.9s ease;
+        background: none;
+
+        
+    }
+
+    /*=== THE BACKFACE VISIBILITY PROP CONTROLS THE REVERSE SIDE OF JUST THAT DIV; KEEPING EITHER VISIBLE WILL CONFLICT W/ THE 3D LAYERS AND CAUSE A FLICKER ===*/
+
+    .email-front {
+
+        background-image: url('../images/contactemail.jpg');
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        height: 18rem;
+        width: 25rem;
+        position: absolute;
+        backface-visibility: hidden;
+        overflow: hidden;
+       
+
+    }
+
+    .email-back {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18rem;
+        width: 25rem;
+        backface-visibility: hidden;
+        overflow: hidden;
+        color:rgb(255, 255, 255);
+        background: rgb(32, 192, 67);
+        text-align: center;
+        transform: rotateY(180deg);
+       
+
+
+    }
+
+    .email-back h1 {
+        font-family: montserrat;
+        font-size: 1.5rem;
+        padding: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .email-card:hover {
+        transform: rotateY(180deg);
+    }
+
+
+    /*=== CARD FLIPS PHONE ===*/
+
+    .phone-card {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 18rem;
+        width: 25rem;
+        transform-style: preserve-3d;
+        transition: all 0.9s ease;
+        background: none;
+
+        
+    }
+
+    .phone-front {
+
+        background-image: url('../images/contactphone.jpg');
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        height: 18rem;
+        width: 25rem;
+        position: absolute;
+        backface-visibility: hidden;
+        overflow: hidden;
+       
+
+    }
+
+    .phone-back {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18rem;
+        width: 25rem;
+        backface-visibility: hidden;
+        overflow: hidden;
+        color:rgb(255, 255, 255);
+        background: rgb(32, 192, 67);
+        text-align: center;
+        transform: rotateY(180deg);
+       
+
+
+    }
+
+    .phone-back h1 {
+        font-family: montserrat;
+        font-size: 1.5rem;
+        padding: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .phone-card:hover {
+        transform: rotateY(180deg);
+    }
+
+
+
+
+
+    /*================================================================ CASH FLOW SECTION ==================================================*/
+
+	.cash-flow img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.cash-flow h1 {
+	font-family: Anton;
+	font-weight: 300;
+    font-size: 1.75rem;
+	text-transform:uppercase;
+	margin-top: .5rem;
+    margin-bottom: 2rem;
+	text-align: center;
+    
+	}
+
+    .cash-flow h3 {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-transform:uppercase;
+    margin-top: 1.5rem;
+    text-align: center;
+    
+    }
+ 
+   
+
+    /*=== CASH FLOW GRID TEMPLATE SECTION: When using grid-template, the values before the slash will determine the size of each row. 
+    The values after the slash determine the size of each column. When using percentages to set rows, 
+    each row will be a percentage of the grid’s total height. Columns are still a percentage of the total width. ===*/
+
+    .grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: 1fr / 50% 50%;
+    align-items: center;
+    
+    
+    }
+   
+
+
+    /*====================================================== CONTACT SECTION ============================================================*/
+
+    .contact {
+        background-color: rgb(247, 205, 67);
+        height:auto;
+        }
+    
+        .contact h1 {
+            font-family: Anton;
+    
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            
+        }
+    
+        .contact h2 {
+            font-family: montserrat;
+            text-align: center;
+            font-weight: 200;
+            font-size: 1.25rem;
+            padding-top: 1rem;
+            text-transform: uppercase;
+        }
+
+
+    /*========================================================== FOOTER ===================================================================*/
+
+    #footer {
+    background-color: black;
+    clear: both;
+    color: white;
+
+    }
+    
+    #footer p {
+    text-align: center;
+    display: block;
+    justify-content: center;   
+    font-family: montserrat;  
+    }
+
+    #footer .social-media {
+    text-align: center;
+    margin-top: 1rem;
+    }
+
+
+    
+
+    /*== margin-inline is for left and right margins only; margin-block would be top and bottom. Min-width below our 90% adds padding
+    to left and right when minimizing screen, our 70.5rem is the maximum width. MIN WIDTH A KEY ELEMENT TO RESPONSIVE DESIGN ==*/
+
+    .container {
+        
+        
+        margin-inline: auto;
+        width: min(90%, 70.5rem);
+        }
+
+
+        .split {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+ 
+        
+
+
+
+
+
+/*============================================================== MEDIA QUERIES ============================================================*/
+
+/* media query for div splits */
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+/*media query for grid template display in mobile*/
+
+@media (max-width: 67em) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr;
+    }
+
+}
+
+/*media query to reduce size of li, a, and navbar search box*/
+
+@media (min-width: 30.9rem) and (max-width: 75.5rem) {
+
+    li, 
+    a {
+        font-family: Anton;
+        text-decoration: none;
+        
+        font-size: 1.35rem;
+        
+        font-weight: 300;
+        color: rgb(15, 15, 15);
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+
+
+}
+
+/*=== media query to reduce size of social media icons ===*/
+
+@media (min-width: 64.05rem) and (max-width: 69rem) {
+
+.social-media .social-media-icon {
+
+height: 2rem;
+width: 2rem;
+
+}
+    
+}
+
+
+
+/*media query to hide search box, social media icons and nav bar links*/
+
+@media (max-width: 65.2rem){
+
+    .navbar .social-media{
+        font-family: Anton;
+        text-decoration: none;
+        
+        font-size: 1.35rem;
+        
+        font-weight: 300;
+        color: rgb(15, 15, 15);
+        text-decoration: none;
+        cursor: pointer;
+        display: none;
+        }
+
+}
+
+/*media query to SHOW HAMBURGER BUTTON*/
+
+@media (max-width: 65.131rem) {
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4.5rem;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(32, 192, 67);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover{
+        color:#ffffff;
+      }
+
+    .nav-item{
+        margin: 1rem 0;
+
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+}
+
+/*Media Query For About Section Button*/
+
+@media (min-width: 30.9rem) and (max-width: 52.5em) {
+
+    .btn {
+        
+        font-family: Anton;	
+        color: rgb(15, 15, 15);
+        background-color: rgb(32, 192, 67);
+        
+        transition: 0.3s;
+        border: solid 0.20rem rgba(240, 231, 231, .3);
+        border-radius: 1rem;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        border-color: none;
+        border-style: hidden;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        cursor: pointer;
+        
+        
+        }
+        
+        .btn:hover {
+            background-color: rgb(14, 12, 12);
+            color:rgb(32, 192, 67);
+            opacity: 1;
+        }
+
+
+}
+
+/*media query for margins of h3 text in service, rates and cash flow sections*/
+
+@media (max-width: 67em) {
+
+    .service h3{
+        margin-bottom: 3.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        
+    }
+
+    .rates h3{
+        margin-bottom: 3.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    .cash-flow h3{
+        margin-bottom: 3.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+        /*media query to adjust line height for H1 service, rates, and cash flow sections*/
+
+        .service h1 {
+            line-height: 5rem;
+            }
+        
+            .rates h1 {
+            line-height: 5rem;
+            }
+        
+            .cash-flow h1 {
+            line-height: 5rem;
+            }
+}
+
+/*media query for margins of h3 text in about section*/
+
+@media (max-width: 90em) {
+
+    .about h3{
+        margin-left: 0.78rem;
+        margin-right: 0.78rem;
+    }
+}   
+
+
+/*media query to adjust font size for h3 about, service, rates, and cash flow sections*/
+
+@media (max-width: 43em) {
+
+    .about h3{
+        font-size: 0.97rem;
+    }
+    .service h3{
+        font-size: 0.85rem;
+    }
+
+    .rates h3{
+        font-size: 0.85rem;
+    }
+
+    .cash-flow h3{
+        font-size: 0.85rem;
+    }
+
+    
+    /*media query to adjust line height for H1 service, rates, and cash flow sections*/
+
+    .service h1 {
+    line-height: 5rem;
+    }
+
+    .rates h1 {
+    line-height: 5rem;
+    }
+
+    .cash-flow h1 {
+    line-height: 5rem;
+    }
+
+}
+
+@media (max-width: 30.9rem) {
+
+    .abouts h1,
+    .about h1,
+    .benefits h1 {
+            
+        font-family: Anton;
+        
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        
+        
+        }
+        
+        .abouts h3,
+        .about h3 {
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: 300;
+        padding-top: 1.5rem;
+        font-size: 1rem;
+
+        }
+
+        .service h1,
+        .rates h1,
+        .cash-flow h1 {
+            font-family: Anton;
+            font-weight: 300;
+            font-size: 1.5rem;
+            text-transform:uppercase;
+            margin-top: 0.5rem;
+            text-align: center;
+            
+            
+            }
+        
+        
+            .service h3,
+            .rates h3 {
+                font-family: Montserrat;
+                font-weight:lighter;
+                font-size: 1rem;
+                text-transform:uppercase;
+                margin-top: 1rem;
+                text-align: center;
+                
+                }
+        
+                .value-proposition-list li {
+                    font-size: 0.95rem;
+                }
+
+                .contact h1 {
+                    font-family: Anton;
+            
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    
+                }
+            
+                .contact h2 {
+                    font-family: Montserrat;
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    
+                }
+
+                #Page-Heroes h1 {
+                    font-family: Anton;
+                    text-align: center;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
+
+                .rates-page h1 {
+                    font-family: Anton;
+                    font-size: 1.75rem;
+                    font-weight: 400;
+                    text-transform:uppercase;
+        
+                    text-align: center;
+                    
+                
+                }
+        
+                .rates-page h2 {
+                    font-family: Montserrat;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    text-transform:uppercase;
+                    padding-top: 1.5rem;
+                    text-align: center;
+                    }
+
+                    .services h1 {
+        
+                        font-family: Anton;
+                        font-size: 1.75rem;
+                        font-weight: 400;
+                        text-transform:uppercase;
+                        
+                        text-align: center;
+                        
+                        
+                        }
+                
+                        .services h2 {
+                            font-family: Montserrat;
+                            font-weight:lighter;
+                            font-weight: 700;
+                            font-size: 1rem;
+                            text-transform:uppercase;
+                            padding-top: 1.5rem;
+                            text-align: center;
+                            
+                            }
+
+        .btn {
+        
+            font-family: Anton;	
+            color: rgb(15, 15, 15);
+            background-color: rgb(32, 192, 67);
+            opacity: 0.9;
+            transition: 0.3s;
+            border: solid 0.20rem rgba(240, 231, 231, .3);
+            border-radius: 1rem;
+            padding: 0.65rem 2rem;
+            text-decoration: none;
+            border-color: none;
+            border-style: hidden;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 0.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            display:block;
+            cursor: pointer;
+            
+            
+            }
+            
+            .btn:hover {
+                background-color: rgb(14, 12, 12);
+                color:rgb(32, 192, 67);
+                opacity: 1;
+            }
+
+            #coh-banner h1 {
+                text-align: center;
+                text-transform: capitalize;
+                align-items: center;
+                font-size: 2rem;
+                font-weight: 500;
+                padding-top: 15rem;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Anton;
+                color:#ffffff;
+                }
+
+
+                /* media query to change "+" font size - this altered font size to h1 tags w/span elements
+                span:nth-child(1){
+                    font-size: 1rem;
+                } */
+
+
+}
+
+@media (min-width: 30.9rem) and (max-width: 34em) {
+
+    #Page-Heroes h1 {
+        font-family: Anton;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color:#3e3c3c;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+
+        padding: 1rem 2.5rem;
+        border: solid 0.125rem rgba(10, 10, 10, 0.822);
+        
+        background-color: rgba(240, 231, 231, 0.75);
+        display: inline;
+    }
+
+
+}
+
+@media (min-width: 31rem) and (max-width: 45em) {
+
+    #atm-benefits h1 {
+                        
+        font-family: Anton;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 400;
+        min-width: 18.75rem;
+        text-transform: uppercase;
+        
+        color:rgb(15, 15, 15);
+    }
+
+}
+
+@media (max-width: 30rem) {
+
+    #atm-benefits h1 {
+                        
+        font-family: Anton;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        min-width: 18.75rem;
+        text-transform: uppercase;
+        
+        color:rgb(15, 15, 15);
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    
