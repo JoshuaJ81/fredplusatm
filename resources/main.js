@@ -15,3 +15,16 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }))
+
+
+const card = document.querySelector('.phone-card');
+
+card.addEventListener('click', () => {
+        card.classList.toggle('flip');
+    });
+
+const mail = document.querySelector('.email-card');
+
+mail.addEventListener('click', () => {
+    mail.classList.toggle('flip');
+});

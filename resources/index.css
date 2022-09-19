@@ -621,7 +621,7 @@
         transform-style: preserve-3d;
         transition: all 0.9s ease;
         background: none;
-
+        cursor:pointer;
         
     }
 
@@ -629,8 +629,7 @@
 
     .email-front {
 
-        background-image: url('../images/contactemail.jpg');
-        background-repeat: no-repeat;
+
         top: 0;
         left: 0;
         height: 18rem;
@@ -669,7 +668,7 @@
     }
 
 
-    .email-card:hover {
+    .email-card.flip {
         transform: rotateY(180deg);
     }
 
@@ -686,14 +685,13 @@
         transform-style: preserve-3d;
         transition: all 0.9s ease;
         background: none;
-
+        cursor: pointer;
         
     }
 
     .phone-front {
 
-        background-image: url('../images/contactphone.jpg');
-        background-repeat: no-repeat;
+
         top: 0;
         left: 0;
         height: 18rem;
@@ -732,7 +730,7 @@
     }
 
 
-    .phone-card:hover {
+    .phone-card.flip {
         transform: rotateY(180deg);
     }
 
@@ -1349,6 +1347,130 @@ width: 2rem;
 
 
 }
+
+
+@media (max-width: 436px) {
+
+
+    .email-card {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 14rem;
+        width: 20rem;
+        transform-style: preserve-3d;
+        transition: all 0.9s ease;
+        background: none;
+        cursor: pointer;
+        
+    }
+
+   
+
+    .email-front {
+
+        background-image: url('../images/contactphone.jpg');
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        height: 14rem;
+        width: 20rem;
+        position: absolute;
+        backface-visibility: hidden;
+        overflow: hidden;
+       
+
+    }
+
+    .email-back {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 14rem;
+        width: 20rem;
+    }
+
+    .email-card.flip {
+        transform: rotateY(180deg);
+    }
+
+    .smflip {
+        height: 14rem;
+        width: 20rem;
+    }
+
+
+    .phone-card {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 14rem;
+        width: 20rem;
+        transform-style: preserve-3d;
+        transition: all 0.9s ease;
+        background: none;
+        cursor: pointer;
+        
+    }
+
+    .phone-front {
+
+
+        top: 0;
+        left: 0;
+        height: 14rem;
+        width: 20rem;
+        position: absolute;
+        backface-visibility: hidden;
+        overflow: hidden;
+       
+
+    }
+
+    .phone-back {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 14rem;
+        width: 20rem;
+        backface-visibility: hidden;
+        overflow: hidden;
+        color:rgb(255, 255, 255);
+        background: rgb(32, 192, 67);
+        text-align: center;
+        transform: rotateY(180deg);
+       
+
+
+    }
+
+    .phone-back h1 {
+        font-family: montserrat;
+        font-size: 1.5rem;
+        padding: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .phone-card.flip {
+        transform: rotateY(180deg);
+    }
+
+
+    .phone-back h1,
+    .email-back h1 {
+        font-size: 1rem;
+    }
+
+
+}
+
+
 
 
 
