@@ -304,7 +304,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position:top;
-                
+                background-attachment: fixed;
                 text-align: center;
                 background-color: rgba(240, 231, 231, 0.28);
                 background-blend-mode: color;
@@ -1478,6 +1478,18 @@ width: 2rem;
         font-size: 1rem;
     }
 
+
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+
+    #atm-benefits {
+        background-image: url('../images/pexels-monstera-5849549.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+        background-attachment: scroll;
+    }
 
 }
 
