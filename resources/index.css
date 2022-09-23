@@ -1481,7 +1481,7 @@ width: 2rem;
 
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {
+@media (min-width: 333px) and (max-width: 1024px) {
 
     #atm-benefits {
         background-image: url('../images/pexels-monstera-5849549.jpg');
