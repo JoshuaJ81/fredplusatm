@@ -1589,18 +1589,19 @@
         background-attachment: scroll;
     }
 
+
+    #rates-handshake {
+        background-image: url('../images/rates-handshake.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+        background-attachment: scroll;
+        
+    }
+
 }
 
-#rates-handshake {
-    background-image: url('../images/rates-handshake.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:top;
-    background-attachment: scroll;
 
-    
-    
-    }
 
 
 
