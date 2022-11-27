@@ -462,6 +462,14 @@
                     }
     
 
+                    #zoom {
+                        transition: transform .2s;
+                    }
+                    
+                    #zoom:hover {
+                        transform: scale(1.15);
+                    }
+
     /*================================================================ RATES SECTION =========================================================*/
 
     
@@ -522,7 +530,20 @@
         
         }
 
-        .rates-page h2 {
+        .rates-recap h1 {
+            font-family: Dancing Script;
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform:capitalize;
+            padding-bottom: 1.5rem;
+            text-align: center;
+            
+        
+        }
+
+        .rates-page,
+        .rates-recap,
+         h2 {
             font-family: Montserrat;
             font-weight: 300;
             font-size: 1.1rem;
@@ -541,11 +562,17 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position:top;
+                background-attachment: fixed;
                 text-align: center;
                 display: flex;
                 height: 60rem;
                 padding-top: 12rem;
                 
+                }
+
+                .rates-recap {
+                    height: auto;
+
                 }
 
     /*=============================================================== CONTACT PAGE =======================================================*/
@@ -960,8 +987,11 @@
 
         #footer p {
             font-size: 0.75rem;
+            margin-left: 2px;
+            margin-left: 2px;
         }
 }
+
 
 
 
